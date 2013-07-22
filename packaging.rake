@@ -14,6 +14,7 @@ PACKAGING_PATH = File.join(File.dirname(__FILE__), 'tasks')
   'build.rake',
   'clean.rake',
   'deb.rake',
+  'cl_deb.rake',
   'deb_repos.rake',
   'doc.rake',
   'fetch.rake',
