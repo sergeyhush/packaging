@@ -223,6 +223,11 @@ def get_debversion
   get_base_pkg_version.join('-') << "#{@build.packager}1"
 end
 
+def get_cl_debversion
+  require 'date'
+  get_base_pkg_version.join('-') << "#{@build.packager}."<< DateTime.now.strftime('%y%m%d')
+end
+
 def get_origversion
   @build.debversion.split('-')[0]
 end

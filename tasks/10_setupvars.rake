@@ -66,7 +66,7 @@ end
 @build.version           ||= get_dash_version
 @build.gemversion        ||= get_dot_version
 @build.ipsversion        ||= get_ips_version
-@build.debversion        ||= get_debversion
+@build.debversion        ||= get_cl_debversion
 @build.origversion       ||= get_origversion
 @build.rpmversion        ||= get_rpmversion
 @build.rpmrelease        ||= get_rpmrelease
